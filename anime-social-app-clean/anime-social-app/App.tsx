@@ -15,6 +15,7 @@ function MainApp() {
   const [activeTab, setActiveTab] = useState<TabName>('home');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [selectedContentId, setSelectedContentId] = useState<string | null>(null);
+  const [isCreatePostOpen, setIsCreatePostOpen] = useState(false);
 
   const handleSearchPress = () => {
     setIsSearchOpen(true);
@@ -28,15 +29,24 @@ function MainApp() {
     setSelectedContentId(contentId);
   };
 
-const handleContentClose = () => {
-  setSelectedContentId(null);
-};
+  const handleContentClose = () => {
+    setSelectedContentId(null);
+  };
+
+  const handleCreatePostClose = () => {
+    setIsCreatePostOpen(false);
+  };
+
+  const handleNewPost = (post: any) => {
+    console.log('New post created:', post);
+    // TODO: Add to feed
+  };
 
   const renderScreen = () => {
     if (selectedContentId) {
       return <ContentDetailScreen contentId={selectedContentId} onClose={handleContentClose} />;
     }
-    
+
     // Show search screen if search is open
     if (isSearchOpen) {
       return <SearchScreen onClose={handleSearchClose} onContentPress={handleContentPress} />;
@@ -44,22 +54,27 @@ const handleContentClose = () => {
 
     switch (activeTab) {
       case 'home':
-        return <HomeScreen onSearchPress={handleSearchPress} />;
+        return <HomeScreen onSearchPress={handleSearchPress} onContentPress={handleContentPress} />;
       case 'library':
         return <LibraryScreen />;
       case 'create':
-        return <CreatePostScreen />;
+        // Create is a modal, so show Home in background
+        return <HomeScreen onSearchPress={handleSearchPress} onContentPress={handleContentPress} />;
       case 'notifications':
         return <NotificationsScreen />;
       case 'profile':
         return <ProfileScreen />;
       default:
-        return <HomeScreen onSearchPress={handleSearchPress} />;
+        return <HomeScreen onSearchPress={handleSearchPress} onContentPress={handleContentPress} />;
     }
   };
 
   const handleTabChange = (tab: TabName) => {
-    setIsSearchOpen(false); // Close search when changing tabs
+    if (tab === 'create') {
+      setIsCreatePostOpen(true);
+      return; // Don't change activeTab
+    }
+    setIsSearchOpen(false);
     setSelectedContentId(null);
     setActiveTab(tab);
   };
@@ -74,6 +89,13 @@ const handleContentClose = () => {
         <View style={styles.content}>{renderScreen()}</View>
         <BottomNav activeTab={activeTab} onTabChange={handleTabChange} />
       </SafeAreaView>
+
+      {/* Create Post Modal */}
+      <CreatePostScreen
+        visible={isCreatePostOpen}
+        onClose={handleCreatePostClose}
+        onPost={handleNewPost}
+      />
     </View>
   );
 }
