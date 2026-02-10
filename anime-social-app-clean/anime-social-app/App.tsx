@@ -7,15 +7,30 @@ import { LibraryScreen } from './src/screens/LibraryScreen';
 import { CreatePostScreen } from './src/screens/CreatePostScreen';
 import { NotificationsScreen } from './src/screens/NotificationsScreen';
 import { ProfileScreen } from './src/screens/ProfileScreen';
+import { SearchScreen } from './src/screens/SearchScreen';
 
 function MainApp() {
   const { theme } = useTheme();
   const [activeTab, setActiveTab] = useState<TabName>('home');
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const handleSearchPress = () => {
+    setIsSearchOpen(true);
+  };
+
+  const handleSearchClose = () => {
+    setIsSearchOpen(false);
+  };
 
   const renderScreen = () => {
+    // Show search screen if search is open
+    if (isSearchOpen) {
+      return <SearchScreen onClose={handleSearchClose} />;
+    }
+
     switch (activeTab) {
       case 'home':
-        return <HomeScreen />;
+        return <HomeScreen onSearchPress={handleSearchPress} />;
       case 'library':
         return <LibraryScreen />;
       case 'create':
@@ -25,8 +40,13 @@ function MainApp() {
       case 'profile':
         return <ProfileScreen />;
       default:
-        return <HomeScreen />;
+        return <HomeScreen onSearchPress={handleSearchPress} />;
     }
+  };
+
+  const handleTabChange = (tab: TabName) => {
+    setIsSearchOpen(false); // Close search when changing tabs
+    setActiveTab(tab);
   };
 
   return (
@@ -37,7 +57,7 @@ function MainApp() {
       />
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.content}>{renderScreen()}</View>
-        <BottomNav activeTab={activeTab} onTabChange={setActiveTab} />
+        <BottomNav activeTab={activeTab} onTabChange={handleTabChange} />
       </SafeAreaView>
     </View>
   );
