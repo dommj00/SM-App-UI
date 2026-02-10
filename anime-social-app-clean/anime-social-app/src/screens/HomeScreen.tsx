@@ -18,9 +18,10 @@ import mockRecommendations from '../data/mockRecommendations.json';
 
 interface HomeScreenProps {
   onSearchPress?: () => void;
+  onContentPress?: (contentId: string) => void;
 }
 
-export const HomeScreen: React.FC<HomeScreenProps> = ({ onSearchPress }) => {
+export const HomeScreen: React.FC<HomeScreenProps> = ({ onSearchPress, onContentPress }) => {
   const { theme } = useTheme();
   const [activeFilter, setActiveFilter] = useState<FeedFilter>('discover');
   const [posts, setPosts] = useState<Post[]>(mockPosts as Post[]);
@@ -102,7 +103,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onSearchPress }) => {
             <RecommendationCard
               key={item.id}
               item={item}
-              onPress={() => console.log('Recommendation pressed:', item.id)}
+              onPress={() => onContentPress && onContentPress(item.id)}
             />
           ))}
         </ScrollView>
