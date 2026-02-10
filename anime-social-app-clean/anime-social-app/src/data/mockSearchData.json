@@ -1,0 +1,179 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "username": "animefan_2024",
+      "displayName": "Anime Fan",
+      "avatar": "https://i.pravatar.cc/150?img=1",
+      "followers": 12500,
+      "type": "user"
+    },
+    {
+      "id": "user-2",
+      "username": "manga_reader",
+      "displayName": "Manga Reader",
+      "avatar": "https://i.pravatar.cc/150?img=2",
+      "followers": 8900,
+      "type": "user"
+    },
+    {
+      "id": "user-3",
+      "username": "bookworm_101",
+      "displayName": "Book Worm",
+      "avatar": "https://i.pravatar.cc/150?img=3",
+      "followers": 5600,
+      "type": "user"
+    },
+    {
+      "id": "user-4",
+      "username": "otaku_life",
+      "displayName": "Otaku Life",
+      "avatar": "https://i.pravatar.cc/150?img=4",
+      "followers": 23400,
+      "type": "user"
+    }
+  ],
+  "content": [
+    {
+      "id": "anime-1",
+      "title": "Attack on Titan",
+      "type": "anime",
+      "coverImage": "https://picsum.photos/seed/aot/300/450",
+      "rating": 4.9,
+      "episodes": 87,
+      "status": "Completed"
+    },
+    {
+      "id": "anime-2",
+      "title": "Demon Slayer",
+      "type": "anime",
+      "coverImage": "https://picsum.photos/seed/ds/300/450",
+      "rating": 4.8,
+      "episodes": 55,
+      "status": "Ongoing"
+    },
+    {
+      "id": "anime-3",
+      "title": "Jujutsu Kaisen",
+      "type": "anime",
+      "coverImage": "https://picsum.photos/seed/jjk/300/450",
+      "rating": 4.7,
+      "episodes": 47,
+      "status": "Ongoing"
+    },
+    {
+      "id": "anime-4",
+      "title": "My Hero Academia",
+      "type": "anime",
+      "coverImage": "https://picsum.photos/seed/mha/300/450",
+      "rating": 4.6,
+      "episodes": 138,
+      "status": "Ongoing"
+    },
+    {
+      "id": "anime-5",
+      "title": "Spy x Family",
+      "type": "anime",
+      "coverImage": "https://picsum.photos/seed/spy/300/450",
+      "rating": 4.8,
+      "episodes": 25,
+      "status": "Ongoing"
+    },
+    {
+      "id": "manga-1",
+      "title": "One Piece",
+      "type": "manga",
+      "coverImage": "https://picsum.photos/seed/op/300/450",
+      "rating": 4.9,
+      "chapters": 1100,
+      "status": "Ongoing"
+    },
+    {
+      "id": "manga-2",
+      "title": "Chainsaw Man",
+      "type": "manga",
+      "coverImage": "https://picsum.photos/seed/csm/300/450",
+      "rating": 4.8,
+      "chapters": 144,
+      "status": "Completed"
+    },
+    {
+      "id": "manga-3",
+      "title": "Berserk",
+      "type": "manga",
+      "coverImage": "https://picsum.photos/seed/berserk/300/450",
+      "rating": 4.9,
+      "chapters": 374,
+      "status": "Ongoing"
+    },
+    {
+      "id": "manga-4",
+      "title": "Tokyo Ghoul",
+      "type": "manga",
+      "coverImage": "https://picsum.photos/seed/tg/300/450",
+      "rating": 4.5,
+      "chapters": 143,
+      "status": "Completed"
+    },
+    {
+      "id": "book-1",
+      "title": "The Name of the Wind",
+      "type": "book",
+      "coverImage": "https://picsum.photos/seed/notw/300/450",
+      "rating": 4.6,
+      "author": "Patrick Rothfuss",
+      "pages": 662
+    },
+    {
+      "id": "book-2",
+      "title": "Mistborn: The Final Empire",
+      "type": "book",
+      "coverImage": "https://picsum.photos/seed/mistborn/300/450",
+      "rating": 4.7,
+      "author": "Brandon Sanderson",
+      "pages": 541
+    },
+    {
+      "id": "book-3",
+      "title": "The Way of Kings",
+      "type": "book",
+      "coverImage": "https://picsum.photos/seed/wok/300/450",
+      "rating": 4.8,
+      "author": "Brandon Sanderson",
+      "pages": 1007
+    },
+    {
+      "id": "book-4",
+      "title": "American Gods",
+      "type": "book",
+      "coverImage": "https://picsum.photos/seed/ag/300/450",
+      "rating": 4.2,
+      "author": "Neil Gaiman",
+      "pages": 465
+    }
+  ],
+  "trending": [
+    "anime-2",
+    "manga-1",
+    "anime-5",
+    "book-3",
+    "anime-1",
+    "manga-2"
+  ],
+  "popular": [
+    "anime-1",
+    "anime-3",
+    "manga-3",
+    "book-2",
+    "anime-4",
+    "manga-4"
+  ],
+  "recommended": [
+    "anime-5",
+    "book-1",
+    "manga-2",
+    "anime-2",
+    "book-4",
+    "manga-1"
+  ]
+}
