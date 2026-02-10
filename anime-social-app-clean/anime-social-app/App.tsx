@@ -8,11 +8,13 @@ import { CreatePostScreen } from './src/screens/CreatePostScreen';
 import { NotificationsScreen } from './src/screens/NotificationsScreen';
 import { ProfileScreen } from './src/screens/ProfileScreen';
 import { SearchScreen } from './src/screens/SearchScreen';
+import { ContentDetailScreen } from './src/screens/ContentDetailScreen';
 
 function MainApp() {
   const { theme } = useTheme();
   const [activeTab, setActiveTab] = useState<TabName>('home');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [selectedContentId, setSelectedContentId] = useState<string | null>(null);
 
   const handleSearchPress = () => {
     setIsSearchOpen(true);
@@ -22,7 +24,19 @@ function MainApp() {
     setIsSearchOpen(false);
   };
 
+  const handleContentPress = (contentId: string) => {
+    setSelectedContentId(contentId);
+  };
+
+const handleContentClose = () => {
+  setSelectedContentId(null);
+};
+
   const renderScreen = () => {
+    if (selectedContentId) {
+      return <ContentDetailScreen contentId={selectedContentId} onClose={handleContentClose} />;
+    }
+    
     // Show search screen if search is open
     if (isSearchOpen) {
       return <SearchScreen onClose={handleSearchClose} />;
@@ -46,6 +60,7 @@ function MainApp() {
 
   const handleTabChange = (tab: TabName) => {
     setIsSearchOpen(false); // Close search when changing tabs
+    setSelectedContentId(null);
     setActiveTab(tab);
   };
 
