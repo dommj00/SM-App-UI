@@ -1,0 +1,120 @@
+{
+  "shelves": [
+    {
+      "id": "my-library",
+      "name": "My Library",
+      "description": "Your default library for saved content",
+      "isProtected": true,
+      "createdAt": "2024-01-01T00:00:00Z",
+      "items": [
+        {
+          "id": "item-1",
+          "contentId": "aot",
+          "title": "Attack on Titan",
+          "type": "anime",
+          "coverImage": "https://picsum.photos/seed/aot/300/450",
+          "userRating": 5,
+          "userReview": "Absolutely incredible series!",
+          "addedAt": "2024-12-01T10:00:00Z"
+        },
+        {
+          "id": "item-2",
+          "contentId": "one-piece-manga",
+          "title": "One Piece",
+          "type": "manga",
+          "coverImage": "https://picsum.photos/seed/op/300/450",
+          "userRating": 5,
+          "userReview": null,
+          "addedAt": "2024-12-05T14:30:00Z"
+        },
+        {
+          "id": "item-3",
+          "contentId": "dune-book",
+          "title": "Dune",
+          "type": "book",
+          "coverImage": "https://picsum.photos/seed/dune/300/450",
+          "userRating": 4,
+          "userReview": "Classic sci-fi masterpiece",
+          "addedAt": "2024-12-10T09:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "shelf-2025-faves",
+      "name": "2025 Faves",
+      "description": "My favorite content of 2025",
+      "isProtected": false,
+      "createdAt": "2025-01-15T12:00:00Z",
+      "items": [
+        {
+          "id": "item-4",
+          "contentId": "demon-slayer",
+          "title": "Demon Slayer",
+          "type": "anime",
+          "coverImage": "https://picsum.photos/seed/ds/300/450",
+          "userRating": 5,
+          "userReview": "Animation is breathtaking",
+          "addedAt": "2025-01-20T16:00:00Z"
+        },
+        {
+          "id": "item-5",
+          "contentId": "jjk-manga",
+          "title": "Jujutsu Kaisen",
+          "type": "manga",
+          "coverImage": "https://picsum.photos/seed/jjk/300/450",
+          "userRating": 4,
+          "userReview": null,
+          "addedAt": "2025-01-22T11:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "shelf-reading-list",
+      "name": "Reading List",
+      "description": "Books and manga I want to read",
+      "isProtected": false,
+      "createdAt": "2024-06-01T08:00:00Z",
+      "items": [
+        {
+          "id": "item-6",
+          "contentId": "book-1",
+          "title": "The Name of the Wind",
+          "type": "book",
+          "coverImage": "https://picsum.photos/seed/notw/300/450",
+          "userRating": null,
+          "userReview": null,
+          "addedAt": "2024-06-15T10:00:00Z"
+        },
+        {
+          "id": "item-7",
+          "contentId": "manga-3",
+          "title": "Berserk",
+          "type": "manga",
+          "coverImage": "https://picsum.photos/seed/berserk/300/450",
+          "userRating": null,
+          "userReview": null,
+          "addedAt": "2024-07-01T14:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "shelf-completed",
+      "name": "Completed",
+      "description": "Everything I've finished",
+      "isProtected": false,
+      "createdAt": "2024-03-01T00:00:00Z",
+      "items": [
+        {
+          "id": "item-8",
+          "contentId": "aot",
+          "title": "Attack on Titan",
+          "type": "anime",
+          "coverImage": "https://picsum.photos/seed/aot/300/450",
+          "userRating": 5,
+          "userReview": "Perfect ending",
+          "addedAt": "2024-11-01T20:00:00Z"
+        }
+      ]
+    }
+  ]
+}
