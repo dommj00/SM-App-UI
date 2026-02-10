@@ -6,6 +6,7 @@ import {
   RefreshControl,
   Text,
   ScrollView,
+  TouchableOpacity,
 } from 'react-native';
 import { useTheme } from '../theme/ThemeContext';
 import { FeedHeader } from '../components/FeedHeader';
@@ -15,7 +16,11 @@ import { Post, Recommendation, FeedFilter } from '../types';
 import mockPosts from '../data/mockPosts.json';
 import mockRecommendations from '../data/mockRecommendations.json';
 
-export const HomeScreen: React.FC = () => {
+interface HomeScreenProps {
+  onSearchPress?: () => void;
+}
+
+export const HomeScreen: React.FC<HomeScreenProps> = ({ onSearchPress }) => {
   const { theme } = useTheme();
   const [activeFilter, setActiveFilter] = useState<FeedFilter>('discover');
   const [posts, setPosts] = useState<Post[]>(mockPosts as Post[]);
@@ -71,6 +76,14 @@ export const HomeScreen: React.FC = () => {
 
   const renderHeader = () => (
     <View>
+      {/* App Header with Search */}
+      <View style={[styles.appHeader, { backgroundColor: theme.colors.surface, borderBottomColor: theme.colors.border }]}>
+        <Text style={[styles.appTitle, { color: theme.colors.text }]}>Home</Text>
+        <TouchableOpacity style={styles.searchButton} onPress={onSearchPress}>
+          <Text style={styles.searchIcon}>🔍</Text>
+        </TouchableOpacity>
+      </View>
+      
       <FeedHeader activeFilter={activeFilter} onFilterChange={setActiveFilter} />
       
       {/* Recommendations Section */}
@@ -150,6 +163,24 @@ export const HomeScreen: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  appHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+  },
+  appTitle: {
+    fontSize: 20,
+    fontWeight: '700',
+  },
+  searchButton: {
+    padding: 8,
+  },
+  searchIcon: {
+    fontSize: 22,
   },
   recommendationsContainer: {
     paddingVertical: 16,
