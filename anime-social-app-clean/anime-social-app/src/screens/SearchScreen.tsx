@@ -21,9 +21,10 @@ type SearchResult = {
 
 interface SearchScreenProps {
   onClose?: () => void;
+  onContentPress?: (contentId: string) => void;
 }
 
-export const SearchScreen: React.FC<SearchScreenProps> = ({ onClose }) => {
+export const SearchScreen: React.FC<SearchScreenProps> = ({ onClose, onContentPress }) => {
   const { theme } = useTheme();
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -72,8 +73,12 @@ export const SearchScreen: React.FC<SearchScreenProps> = ({ onClose }) => {
   };
 
   const handleResultPress = (result: SearchResult) => {
-    console.log('Selected:', result.type, result.data.title || result.data.displayName);
-    // TODO: Navigate to detail page
+    if (result.type === 'content' && onContentPress) {
+      onContentPress(result.data.id);
+    } else if (result.type === 'user') {
+      console.log('User selected:', result.data.displayName);
+      // TODO: Navigate to user profile
+    }
   };
 
   const renderSearchResult = ({ item }: { item: SearchResult }) => {
@@ -154,7 +159,7 @@ export const SearchScreen: React.FC<SearchScreenProps> = ({ onClose }) => {
                     ...item,
                     reviewCount: Math.floor(Math.random() * 50000) + 10000,
                   }}
-                  onPress={() => console.log('Trending item:', item.title)}
+                  onPress={() => onContentPress && onContentPress(item.id)}  
                 />
               ))}
             </ScrollView>
@@ -173,7 +178,7 @@ export const SearchScreen: React.FC<SearchScreenProps> = ({ onClose }) => {
                     ...item,
                     reviewCount: Math.floor(Math.random() * 50000) + 10000,
                   }}
-                  onPress={() => console.log('Popular item:', item.title)}
+                  onPress={() => onContentPress && onContentPress(item.id)}
                 />
               ))}
             </ScrollView>
@@ -192,7 +197,7 @@ export const SearchScreen: React.FC<SearchScreenProps> = ({ onClose }) => {
                     ...item,
                     reviewCount: Math.floor(Math.random() * 50000) + 10000,
                   }}
-                  onPress={() => console.log('Recommended item:', item.title)}
+                  onPress={() => onContentPress && onContentPress(item.id)}
                 />
               ))}
             </ScrollView>
