@@ -1,0 +1,266 @@
+{
+  "content": [
+    {
+      "id": "aot",
+      "title": "Attack on Titan",
+      "type": "anime",
+      "coverImage": "https://picsum.photos/seed/aot/400/600",
+      "rating": 4.9,
+      "reviewCount": 2400000,
+      "seasons": 4,
+      "status": null,
+      "inLibrary": false,
+      "synopsis": "In a world where humanity lives within enormous walled cities to protect themselves from Titans, giant humanoid creatures, a young boy named Eren Yeager vows to exterminate all Titans after they destroy his hometown and kill his mother.",
+      "genres": ["Action", "Drama", "Fantasy"],
+      "releaseYear": 2013,
+      "studio": "Wit Studio / MAPPA",
+      "episodes": [
+        {
+          "id": "aot-s1e1",
+          "season": 1,
+          "number": 1,
+          "title": "To You, in 2000 Years",
+          "rating": 4.8,
+          "reviewCount": 45000,
+          "watched": true,
+          "userRating": 5
+        },
+        {
+          "id": "aot-s1e2",
+          "season": 1,
+          "number": 2,
+          "title": "That Day",
+          "rating": 4.9,
+          "reviewCount": 52000,
+          "watched": true,
+          "userRating": 5
+        },
+        {
+          "id": "aot-s1e3",
+          "season": 1,
+          "number": 3,
+          "title": "A Dim Light Amid Despair",
+          "rating": 4.7,
+          "reviewCount": 48000,
+          "watched": false,
+          "userRating": null
+        },
+        {
+          "id": "aot-s1e4",
+          "season": 1,
+          "number": 4,
+          "title": "The Night of the Closing Ceremony",
+          "rating": 4.6,
+          "reviewCount": 41000,
+          "watched": false,
+          "userRating": null
+        },
+        {
+          "id": "aot-s1e5",
+          "season": 1,
+          "number": 5,
+          "title": "First Battle",
+          "rating": 4.9,
+          "reviewCount": 58000,
+          "watched": false,
+          "userRating": null
+        },
+        {
+          "id": "aot-s2e1",
+          "season": 2,
+          "number": 1,
+          "title": "Beast Titan",
+          "rating": 4.8,
+          "reviewCount": 39000,
+          "watched": false,
+          "userRating": null
+        },
+        {
+          "id": "aot-s2e2",
+          "season": 2,
+          "number": 2,
+          "title": "I'm Home",
+          "rating": 4.7,
+          "reviewCount": 35000,
+          "watched": false,
+          "userRating": null
+        }
+      ]
+    },
+    {
+      "id": "demon-slayer",
+      "title": "Demon Slayer",
+      "type": "anime",
+      "coverImage": "https://picsum.photos/seed/ds/400/600",
+      "rating": 4.8,
+      "reviewCount": 1800000,
+      "seasons": 3,
+      "status": null,
+      "inLibrary": false,
+      "synopsis": "A young boy becomes a demon slayer after his family is slaughtered and his sister is turned into a demon.",
+      "genres": ["Action", "Supernatural", "Drama"],
+      "releaseYear": 2019,
+      "studio": "ufotable",
+      "episodes": [
+        {
+          "id": "ds-s1e1",
+          "season": 1,
+          "number": 1,
+          "title": "Cruelty",
+          "rating": 4.9,
+          "reviewCount": 62000,
+          "watched": false,
+          "userRating": null
+        },
+        {
+          "id": "ds-s1e2",
+          "season": 1,
+          "number": 2,
+          "title": "Trainer Sakonji Urokodaki",
+          "rating": 4.7,
+          "reviewCount": 45000,
+          "watched": false,
+          "userRating": null
+        },
+        {
+          "id": "ds-s1e3",
+          "season": 1,
+          "number": 3,
+          "title": "Sabito and Makomo",
+          "rating": 4.8,
+          "reviewCount": 48000,
+          "watched": false,
+          "userRating": null
+        }
+      ]
+    },
+    {
+      "id": "one-piece-manga",
+      "title": "One Piece",
+      "type": "manga",
+      "coverImage": "https://picsum.photos/seed/op/400/600",
+      "rating": 4.9,
+      "reviewCount": 3200000,
+      "volumes": 107,
+      "status": null,
+      "inLibrary": false,
+      "synopsis": "Monkey D. Luffy sets off on an adventure to find the legendary One Piece treasure and become King of the Pirates.",
+      "genres": ["Action", "Adventure", "Comedy"],
+      "releaseYear": 1997,
+      "author": "Eiichiro Oda",
+      "chapters": [
+        {
+          "id": "op-c1",
+          "volume": 1,
+          "number": 1,
+          "title": "Romance Dawn",
+          "rating": 4.9,
+          "reviewCount": 89000,
+          "read": true,
+          "userRating": 5
+        },
+        {
+          "id": "op-c2",
+          "volume": 1,
+          "number": 2,
+          "title": "They Call Him 'Straw Hat Luffy'",
+          "rating": 4.8,
+          "reviewCount": 72000,
+          "read": true,
+          "userRating": 4
+        },
+        {
+          "id": "op-c3",
+          "volume": 1,
+          "number": 3,
+          "title": "Enter Zoro",
+          "rating": 4.9,
+          "reviewCount": 85000,
+          "read": false,
+          "userRating": null
+        }
+      ]
+    },
+    {
+      "id": "jjk-manga",
+      "title": "Jujutsu Kaisen",
+      "type": "manga",
+      "coverImage": "https://picsum.photos/seed/jjk/400/600",
+      "rating": 4.8,
+      "reviewCount": 1500000,
+      "volumes": 25,
+      "status": null,
+      "inLibrary": false,
+      "synopsis": "A boy swallows a cursed talisman and becomes host to a powerful curse, joining a secret organization of Jujutsu Sorcerers.",
+      "genres": ["Action", "Supernatural", "School"],
+      "releaseYear": 2018,
+      "author": "Gege Akutami",
+      "chapters": [
+        {
+          "id": "jjk-c1",
+          "volume": 1,
+          "number": 1,
+          "title": "Ryomen Sukuna",
+          "rating": 4.8,
+          "reviewCount": 45000,
+          "read": false,
+          "userRating": null
+        },
+        {
+          "id": "jjk-c2",
+          "volume": 1,
+          "number": 2,
+          "title": "Secret Execution",
+          "rating": 4.7,
+          "reviewCount": 38000,
+          "read": false,
+          "userRating": null
+        }
+      ]
+    },
+    {
+      "id": "dune-book",
+      "title": "Dune",
+      "type": "book",
+      "coverImage": "https://picsum.photos/seed/dune/400/600",
+      "rating": 4.7,
+      "reviewCount": 890000,
+      "pages": 412,
+      "status": null,
+      "inLibrary": false,
+      "synopsis": "Set in the distant future, Dune tells the story of young Paul Atreides as his family accepts control of the desert planet Arrakis.",
+      "genres": ["Science Fiction", "Adventure"],
+      "releaseYear": 1965,
+      "author": "Frank Herbert",
+      "chapters": [
+        {
+          "id": "dune-c1",
+          "number": 1,
+          "title": "Book One: Dune",
+          "rating": 4.8,
+          "reviewCount": 25000,
+          "read": false,
+          "userRating": null
+        },
+        {
+          "id": "dune-c2",
+          "number": 2,
+          "title": "Book Two: Muad'Dib",
+          "rating": 4.7,
+          "reviewCount": 22000,
+          "read": false,
+          "userRating": null
+        },
+        {
+          "id": "dune-c3",
+          "number": 3,
+          "title": "Book Three: The Prophet",
+          "rating": 4.9,
+          "reviewCount": 28000,
+          "read": false,
+          "userRating": null
+        }
+      ]
+    }
+  ]
+}
