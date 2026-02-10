@@ -39,7 +39,7 @@ const handleContentClose = () => {
     
     // Show search screen if search is open
     if (isSearchOpen) {
-      return <SearchScreen onClose={handleSearchClose} />;
+      return <SearchScreen onClose={handleSearchClose} onContentPress={handleContentPress} />;
     }
 
     switch (activeTab) {
