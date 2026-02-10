@@ -1,0 +1,50 @@
+[
+  {
+    "id": "rec-1",
+    "title": "Attack on Titan",
+    "coverImage": "https://picsum.photos/seed/aot/300/450",
+    "type": "anime",
+    "rating": 4.9,
+    "reviewCount": 24532
+  },
+  {
+    "id": "rec-2",
+    "title": "Demon Slayer",
+    "coverImage": "https://picsum.photos/seed/ds/300/450",
+    "type": "anime",
+    "rating": 4.8,
+    "reviewCount": 18943
+  },
+  {
+    "id": "rec-3",
+    "title": "One Piece",
+    "coverImage": "https://picsum.photos/seed/op/300/450",
+    "type": "manga",
+    "rating": 4.9,
+    "reviewCount": 45231
+  },
+  {
+    "id": "rec-4",
+    "title": "Jujutsu Kaisen",
+    "coverImage": "https://picsum.photos/seed/jjk/300/450",
+    "type": "anime",
+    "rating": 4.7,
+    "reviewCount": 15678
+  },
+  {
+    "id": "rec-5",
+    "title": "Chainsaw Man",
+    "coverImage": "https://picsum.photos/seed/csm/300/450",
+    "type": "manga",
+    "rating": 4.8,
+    "reviewCount": 12453
+  },
+  {
+    "id": "rec-6",
+    "title": "The Name of the Wind",
+    "coverImage": "https://picsum.photos/seed/notw/300/450",
+    "type": "book",
+    "rating": 4.6,
+    "reviewCount": 8934
+  }
+]

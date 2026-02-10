@@ -1,0 +1,187 @@
+[
+  {
+    "id": "post-1",
+    "user": {
+      "id": "user-1",
+      "username": "animefan_2024",
+      "displayName": "Anime Fan",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    "content": "Just finished Attack on Titan S4E5 and WOW! The animation during the titan fight scene was absolutely incredible. The way they handled Eren's transformation... chills! 🔥",
+    "images": [
+      "https://picsum.photos/seed/post1a/800/600",
+      "https://picsum.photos/seed/post1b/800/600"
+    ],
+    "contentRef": {
+      "title": "Attack on Titan",
+      "type": "anime",
+      "episode": 5
+    },
+    "rating": 5,
+    "likes": 1243,
+    "comments": 89,
+    "shares": 34,
+    "timestamp": "2024-02-10T10:30:00Z",
+    "isLiked": false,
+    "isBookmarked": false
+  },
+  {
+    "id": "post-2",
+    "user": {
+      "id": "user-2",
+      "username": "manga_reader",
+      "displayName": "Manga Reader",
+      "avatar": "https://i.pravatar.cc/150?img=2"
+    },
+    "content": "Chapter 1087 of One Piece had me in tears! Oda never misses. The reveal about Luffy's past and how it connects to the current arc is masterful storytelling.",
+    "contentRef": {
+      "title": "One Piece",
+      "type": "manga",
+      "chapter": 1087
+    },
+    "rating": 5,
+    "likes": 2156,
+    "comments": 156,
+    "shares": 67,
+    "timestamp": "2024-02-10T09:15:00Z",
+    "isLiked": true,
+    "isBookmarked": true
+  },
+  {
+    "id": "post-3",
+    "user": {
+      "id": "user-3",
+      "username": "bookworm_101",
+      "displayName": "Book Worm",
+      "avatar": "https://i.pravatar.cc/150?img=3"
+    },
+    "content": "Currently reading 'The Name of the Wind' and I can't put it down! Kvothe's journey from the university to his adventures is so engaging. Patrick Rothfuss really knows how to craft a compelling narrative.",
+    "images": [
+      "https://picsum.photos/seed/book1/800/600"
+    ],
+    "contentRef": {
+      "title": "The Name of the Wind",
+      "type": "book"
+    },
+    "rating": 4.5,
+    "likes": 876,
+    "comments": 45,
+    "shares": 23,
+    "timestamp": "2024-02-10T08:45:00Z",
+    "isLiked": false,
+    "isBookmarked": false
+  },
+  {
+    "id": "post-4",
+    "user": {
+      "id": "user-4",
+      "username": "otaku_life",
+      "displayName": "Otaku Life",
+      "avatar": "https://i.pravatar.cc/150?img=4"
+    },
+    "content": "Demon Slayer S2E8 fight choreography is on another level! The animation studio really outdid themselves. Every frame could be a wallpaper 🎨",
+    "images": [
+      "https://picsum.photos/seed/demon1/800/600",
+      "https://picsum.photos/seed/demon2/800/600",
+      "https://picsum.photos/seed/demon3/800/600"
+    ],
+    "contentRef": {
+      "title": "Demon Slayer",
+      "type": "anime",
+      "episode": 8
+    },
+    "rating": 5,
+    "likes": 3421,
+    "comments": 234,
+    "shares": 123,
+    "timestamp": "2024-02-10T07:20:00Z",
+    "isLiked": true,
+    "isBookmarked": false
+  },
+  {
+    "id": "post-5",
+    "user": {
+      "id": "user-5",
+      "username": "casual_reader",
+      "displayName": "Casual Reader",
+      "avatar": "https://i.pravatar.cc/150?img=5"
+    },
+    "content": "Anyone else reading Chainsaw Man? The pacing in the recent chapters has been insane. Fujimoto is a madman and I love it!",
+    "contentRef": {
+      "title": "Chainsaw Man",
+      "type": "manga"
+    },
+    "rating": 4,
+    "likes": 567,
+    "comments": 78,
+    "shares": 12,
+    "timestamp": "2024-02-10T06:00:00Z",
+    "isLiked": false,
+    "isBookmarked": true
+  },
+  {
+    "id": "post-6",
+    "user": {
+      "id": "user-6",
+      "username": "anime_critic",
+      "displayName": "Anime Critic",
+      "avatar": "https://i.pravatar.cc/150?img=6"
+    },
+    "content": "Jujutsu Kaisen S2 continues to impress. The character development in this arc is phenomenal, and the action sequences are consistently stunning.",
+    "images": [
+      "https://picsum.photos/seed/jjk1/800/600"
+    ],
+    "contentRef": {
+      "title": "Jujutsu Kaisen",
+      "type": "anime"
+    },
+    "rating": 4.5,
+    "likes": 1890,
+    "comments": 112,
+    "shares": 45,
+    "timestamp": "2024-02-10T05:30:00Z",
+    "isLiked": false,
+    "isBookmarked": false
+  },
+  {
+    "id": "post-7",
+    "user": {
+      "id": "user-1",
+      "username": "animefan_2024",
+      "displayName": "Anime Fan",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    "content": "Just discovered this hidden gem of an anime. Highly recommend if you're into psychological thrillers!",
+    "likes": 234,
+    "comments": 23,
+    "shares": 8,
+    "timestamp": "2024-02-10T04:15:00Z",
+    "isLiked": false,
+    "isBookmarked": false
+  },
+  {
+    "id": "post-8",
+    "user": {
+      "id": "user-7",
+      "username": "fantasy_fan",
+      "displayName": "Fantasy Fan",
+      "avatar": "https://i.pravatar.cc/150?img=7"
+    },
+    "content": "The Stormlight Archive series by Brandon Sanderson is absolutely epic. The world-building is unmatched. If you haven't started it yet, what are you waiting for?",
+    "images": [
+      "https://picsum.photos/seed/storm1/800/600",
+      "https://picsum.photos/seed/storm2/800/600"
+    ],
+    "contentRef": {
+      "title": "The Way of Kings",
+      "type": "book"
+    },
+    "rating": 5,
+    "likes": 1456,
+    "comments": 189,
+    "shares": 56,
+    "timestamp": "2024-02-10T03:00:00Z",
+    "isLiked": true,
+    "isBookmarked": true
+  }
+]
