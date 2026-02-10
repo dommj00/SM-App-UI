@@ -35,7 +35,7 @@
   ],
   "content": [
     {
-      "id": "anime-1",
+      "id": "aot",
       "title": "Attack on Titan",
       "type": "anime",
       "coverImage": "https://picsum.photos/seed/aot/300/450",
@@ -44,7 +44,7 @@
       "status": "Completed"
     },
     {
-      "id": "anime-2",
+      "id": "demon-slayer",
       "title": "Demon Slayer",
       "type": "anime",
       "coverImage": "https://picsum.photos/seed/ds/300/450",
@@ -53,7 +53,7 @@
       "status": "Ongoing"
     },
     {
-      "id": "anime-3",
+      "id": "jjk-manga",
       "title": "Jujutsu Kaisen",
       "type": "anime",
       "coverImage": "https://picsum.photos/seed/jjk/300/450",
@@ -80,7 +80,7 @@
       "status": "Ongoing"
     },
     {
-      "id": "manga-1",
+      "id": "one-piece-manga",
       "title": "One Piece",
       "type": "manga",
       "coverImage": "https://picsum.photos/seed/op/300/450",
@@ -114,6 +114,15 @@
       "rating": 4.5,
       "chapters": 143,
       "status": "Completed"
+    },
+    {
+      "id": "dune-book",
+      "title": "Dune",
+      "type": "book",
+      "coverImage": "https://picsum.photos/seed/dune/300/450",
+      "rating": 4.7,
+      "author": "Frank Herbert",
+      "pages": 412
     },
     {
       "id": "book-1",
@@ -153,16 +162,16 @@
     }
   ],
   "trending": [
-    "anime-2",
-    "manga-1",
+    "demon-slayer",
+    "one-piece-manga",
     "anime-5",
     "book-3",
-    "anime-1",
+    "aot",
     "manga-2"
   ],
   "popular": [
-    "anime-1",
-    "anime-3",
+    "aot",
+    "jjk-manga",
     "manga-3",
     "book-2",
     "anime-4",
@@ -170,10 +179,10 @@
   ],
   "recommended": [
     "anime-5",
-    "book-1",
+    "dune-book",
     "manga-2",
-    "anime-2",
+    "demon-slayer",
     "book-4",
-    "manga-1"
+    "one-piece-manga"
   ]
 }
