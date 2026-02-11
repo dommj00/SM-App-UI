@@ -56,7 +56,7 @@ function MainApp() {
       case 'home':
         return <HomeScreen onSearchPress={handleSearchPress} onContentPress={handleContentPress} />;
       case 'library':
-        return <LibraryScreen />;
+        return <LibraryScreen onContentPress={handleContentPress} />;
       case 'create':
         // Create is a modal, so show Home in background
         return <HomeScreen onSearchPress={handleSearchPress} onContentPress={handleContentPress} />;
